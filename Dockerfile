@@ -12,7 +12,7 @@ RUN chown -R nginx:nginx /var/cache/nginx && \
     chown -R nginx:nginx /var/log/nginx && \ 
     chown -R nginx:nginx /etc/nginx/conf.d 
 RUN touch /var/run/nginx.pid && \
-   chown -R nginx:nginx /var/run/nginx.pid   
+    chown -R nginx:nginx /var/run/nginx.pid   
 RUN chgrp -R root /var/cache/nginx /var/run /var/log/nginx  && \
     chmod -R 770 /var/cache/nginx /var/run /var/log/nginx 
 
